@@ -1,5 +1,9 @@
-<title>Speak & Spell Clear</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Speak & Spell</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: one handheld unit centred on the page. Dark ink screen on top, caption strip, controls, then a rounded A-Z keyboard. */
@@ -64,11 +68,14 @@ audio{width:100%;height:36px}
 #sayText{width:100%;min-width:0;font:500 1.2rem var(--mono);padding:14px;border-radius:16px;border:2px solid var(--key-edge);background:var(--key);color:var(--fg)}
 @media(max-width:420px){.slot{font-size:1.9rem;width:26px}.device{padding:14px;border-radius:26px}}
 @media(prefers-reduced-motion:reduce){.btn,.key{transition:none}}
+body{margin:0}
 </style>
+</head>
+<body>
 
 <main class="device" id="device" data-mode="spell">
   <header>
-    <h1>Speak &amp; Spell <span>Clear</span></h1>
+    <h1>Speak &amp; Spell</h1>
     <div class="score" aria-live="polite"><span id="stars">★ 0</span><span id="streak">Streak 0</span></div>
   </header>
 
@@ -302,3 +309,6 @@ document.addEventListener("keydown",e=>{
 });
 S.word="apples";render();
 </script>
+
+</body>
+</html>
